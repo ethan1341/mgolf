@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mgolf/static/css/main.0ef7b71c.css",
-    "main.js": "/mgolf/static/js/main.e616c422.js",
+    "main.js": "/mgolf/static/js/main.db4dfa13.js",
     "static/js/453.a307ec78.chunk.js": "/mgolf/static/js/453.a307ec78.chunk.js",
     "static/media/montserrat-latin-ext-700-normal.woff": "/mgolf/static/media/montserrat-latin-ext-700-normal.6c3c83e763b9c70c4bc7.woff",
     "static/media/montserrat-latin-ext-700-normal.woff2": "/mgolf/static/media/montserrat-latin-ext-700-normal.35ae035fb77247440b26.woff2",
@@ -55,11 +55,11 @@
     "static/media/open-sans-greek-ext-600-normal.woff": "/mgolf/static/media/open-sans-greek-ext-600-normal.a3b5e22c74f42fe17dfb.woff",
     "index.html": "/mgolf/index.html",
     "main.0ef7b71c.css.map": "/mgolf/static/css/main.0ef7b71c.css.map",
-    "main.e616c422.js.map": "/mgolf/static/js/main.e616c422.js.map",
+    "main.db4dfa13.js.map": "/mgolf/static/js/main.db4dfa13.js.map",
     "453.a307ec78.chunk.js.map": "/mgolf/static/js/453.a307ec78.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ef7b71c.css",
-    "static/js/main.e616c422.js"
+    "static/js/main.db4dfa13.js"
   ]
 }
