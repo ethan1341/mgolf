@@ -108,37 +108,18 @@ export default function HomePage() {
             Visit MGOLF Driving Range today and experience the difference quality practice makes.
           </Text>
           <Box display="flex" justifyContent="center" width="100%">
-            <Stack 
-              direction={{ base: 'column', md: 'row' }} 
-              spacing={4} 
-              justify="center"
-              align="center"
-              width={{ base: '100%', sm: 'auto' }}
+            <Button
+              as="a"
+              href="/contact"
+              colorScheme="whiteAlpha"
+              size="lg"
+              fontWeight="bold"
+              rounded="md"
+              width={{ base: '80%', sm: 'auto' }}
+              px={8}
             >
-              <Button
-                as="a"
-                href="/contact"
-                colorScheme="whiteAlpha"
-                size="lg"
-                fontWeight="bold"
-                rounded="md"
-                width={{ base: '100%', sm: 'auto' }}
-              >
-                Contact Us
-              </Button>
-              <Button
-                as="a"
-                href="/events"
-                variant="outline"
-                colorScheme="whiteAlpha"
-                size="lg"
-                fontWeight="bold"
-                rounded="md"
-                width={{ base: '100%', sm: 'auto' }}
-              >
-                View Events
-              </Button>
-            </Stack>
+              Contact Us
+            </Button>
           </Box>
         </Container>
       </Box>

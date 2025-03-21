@@ -85,20 +85,38 @@ export default function Hero({
             alignSelf={'center'}
             position={'relative'}
           >
-            <Button
-              as={Link}
-              to={ctaLink}
-              colorScheme={'green'}
-              bg={'brand.primary'}
-              rounded={'full'}
-              px={6}
-              _hover={{
-                bg: 'brand.dark',
-              }}
-              size="lg"
-            >
-              {ctaText}
-            </Button>
+            <Stack direction={{ base: 'column', sm: 'row' }} spacing={4}>
+              <Button
+                as={Link}
+                to={ctaLink}
+                colorScheme={'green'}
+                bg={'brand.primary'}
+                rounded={'full'}
+                px={6}
+                _hover={{
+                  bg: 'brand.dark',
+                }}
+                size="lg"
+              >
+                {ctaText}
+              </Button>
+              <Button
+                as={Link}
+                to="/events"
+                variant="outline"
+                colorScheme="whiteAlpha"
+                borderColor="white"
+                color="white"
+                rounded={'full'}
+                px={6}
+                _hover={{
+                  bg: 'rgba(255,255,255,0.2)',
+                }}
+                size="lg"
+              >
+                View Events
+              </Button>
+            </Stack>
           </Stack>
         </Stack>
       </Container>
