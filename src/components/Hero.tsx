@@ -1,11 +1,12 @@
 import React from 'react';
 import {
+  Container,
+  Stack,
+  Flex,
   Box,
   Heading,
-  Container,
   Text,
   Button,
-  Stack,
   Icon,
   useColorModeValue,
   createIcon,
@@ -13,29 +14,39 @@ import {
 import { Link } from 'react-router-dom';
 
 interface HeroProps {
-  title?: string;
-  subtitle?: string;
-  imageAlt?: string;
-  imageSrc?: string;
-  ctaText?: string;
-  ctaLink?: string;
+  title: string;
+  subtitle: string;
+  imageAlt: string;
+  imageSrc: string;
+  ctaText: string;
+  ctaLink: string;
 }
 
 export default function Hero({
-  title = "Practice with a Purpose at MGolf",
-  subtitle = "State-of-the-art facilities to enhance your golf game. Professional instruction, advanced technology, and a welcoming atmosphere for golfers of all levels.",
-  imageAlt = "Golf Driving Range",
-  imageSrc = "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-  ctaText = "Our Services",
-  ctaLink = "/services"
+  title,
+  subtitle,
+  imageAlt,
+  imageSrc,
+  ctaText,
+  ctaLink,
 }: HeroProps) {
+  // Use PUBLIC_URL for image paths
+  const getImageUrl = (path: string) => {
+    // If it's already an absolute URL (starts with http), return as is
+    if (path.startsWith('http')) {
+      return path;
+    }
+    // Otherwise, prepend the PUBLIC_URL
+    return `${process.env.PUBLIC_URL}${path}`;
+  };
+
   return (
     <Box
       position={'relative'}
       height={'600px'}
       width={'full'}
       overflow={'hidden'}
-      backgroundImage={`url('${imageSrc}')`}
+      backgroundImage={`url('${getImageUrl(imageSrc)}')`}
       backgroundSize={'cover'}
       backgroundPosition={'center center'}
       aria-label={imageAlt}
